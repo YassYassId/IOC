@@ -13,4 +13,8 @@ public class MetierImpl implements IMetier {
         double result = t * 60;
         return result;
     }
+
+    public void setDao(IDao dao) {
+        this.dao = dao;
+    }
 }
