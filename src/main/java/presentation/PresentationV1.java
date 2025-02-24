@@ -10,7 +10,7 @@ public class PresentationV1 {
         // Injection des dépendances par instanciation statique
         DaoImpl dao = new DaoImpl();
         MetierImpl metier = new MetierImpl();
-        metier.setDao(dao);
+        metier.setDao(dao); // Injection en utilisant un Setter
         System.out.println(metier.calcul());
     }
 }
